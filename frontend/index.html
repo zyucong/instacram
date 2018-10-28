@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="src/jquery-3.3.1.min.js"></script>
+    <script src="src/bootstrap.min.js"></script>
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure --> 
+    <header class='banner'>
+        <h1 id="index">Instacram</h1>
+        <ul id="nav" class='nav'>
+            <!--<li class="nav-item"><input type="file"/></li>-->
+            <li class="nav-item alert alert-danger" id="upload-fail" style="display: none;"></li>
+            <li class="nav-item alert alert-success" id="upload-success" style="display: none;">Upload Success!</li>
+            <li class="nav-item"><input type="text" id="search-field" class="form-control search-field" placeholder="Search other users..."></li>
+            <li class="nav-item"><button type="button" id="post-content" class="btn btn-primary" data-toggle="modal" data-target="#new-post">Post</button></li>
+            <li class='nav-item'><button type="button" id="profile" class="btn btn-info" data-toggle="modal" data-target="#profile-modal">Profile</button></li>
+            <li class='nav-item'><button type="button" id="logout" class="btn btn-danger">Log Out</button></li>
+        </ul>
+    </header>
+    <main id="main" role='main'>
+        <!-- app goes here -->
+        <div id="notification" class="alert alert-info" role="alert"></div>
+        <div id="user-profile">
+
+        </div>
+        <div id='large-feed'>
+            <!-- inject feed data -->
+        </div>
+        <svg id="scroll-loading" width="6%" style="margin-left: 47%; display: none" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling"><circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#3e6d8d" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(71.7955 50 50)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></circle></svg>
+    </main>
+    <footer>
+        <p>Instacram example</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

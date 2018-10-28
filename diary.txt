@@ -1,0 +1,10 @@
+21/10/18     13:00   20:00   Investigate the spec and data urls, partially complete level0 and level1
+22/10/18	 12:00   17:00	 Completedly complete level0 and level1
+23/10/18	 11:00   19:00	 Complete the display of likes and comments with slick UI
+23/10/18	 21:00	 23:59   Complete the live update to like a post
+24/10/18	 13:00	 23:59	 Implement the post of comments
+25/10/18	 11:00	 14:30	 Implement post content and infinite scroll, pending to addEventlistener for the newly added posts
+25/10/18	 16:00	 23:59   Implement fragment routing and user profile pages, reconstruct the loading logic to make it smooth, all event listeners appropiately added and removed
+26/10/18	 13:30   23:59	 Add follow/unfollow button to user profile pages, add update logged in user information feature
+27/10/18	 13:00	 21:00   Add delete/update post feature, as well as writing some comments and adjust the coding style
+28/10/18	 11:00	 18:00	 Add the feature to show following list, implment push notifications, wrap up the assignment
