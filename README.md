@@ -1,52 +1,29 @@
+
 ## Introduction
+The final product is temporarily hosted in http://207.148.84.121:8080
 
-JavaScript is used increasingly to provide a native-like application experience in the web. One
-major avenue of this has been in the use of Single Page Applications or SPAs. SPAs
-are generated, rendered, and updated using JavaScript. Because SPAs don't require a user
-to navigate away from a page to do anything, they retain a degree of user and application state.
-
-There are millions of websites that utilise SPAs in part of, or all of their web applications.
-
-The assignment intends to teach students to build a simple SPA which can fetch dynamic data from a HTTP/S API.
-Your task will be to provide an implemention of a SPA that can provide a number of key features.
-
-Some of the skills/concepts this assignment aims to test (and build upon):
+Some of the skills/concepts I have implemented (and build upon):
 
 * Simple event handling (buttons)
-* Advanced Mouse Events (Swipe)
+* Advanced Mouse Events
 * Fetching data from an API
 * Infinite scroll
 * CSS Animations
-* Web Workers
 * Push Notifications (Polling)
-* Offline Support
 * Routing (URL fragment based routing)
 
-## API
-
-The backend server will be where you'll be getting your data. Don't touch the code in the backend; although we've provided the source,
-it's meant to be a black box. Final testing will be done with our own backend. Use the instructions provided in the backend/README.md
-to get it started.
-
-For the full docs on the API, start the backend server and navigate to the root (very likely to be `localhost:5000`). You'll see
-all the endpoints, descriptions and expected responses.
-
 ## A Working Product
-Your site should be compatible with 'modern' Chrome, Safari, and Mozilla browsers.
-We will assume your browser has JavaScript enabled, and supports ES6 syntax.
+I will assume your browser has JavaScript enabled, and supports ES6 syntax.
 
 ## Restrictions
-You cannot use more than _minimal_ amounts of external JavaScript. Do not use NPM except to
-install the helper development libraries. We will allow you to use CSS from external sources as long as it properly attributed.
+Use _minimal_ amounts of external JavaScript. Do not use NPM except to install the helper development libraries. Yeah I implemented it with Vanilla JS
 
 ## Getting Started
-Clone the repository provided. It has a whole bunch of code, documentation, and a whole working server you'll need for
-developing your frontend applicaiton.
-
 Please read the relevant docs for setup in the folders `/backend` and `/frontend` of the provided repository.
-Each folder outlines basic steps to get started. There are also some comments provided in the frontend source code.
 
 ## Milestones
+Here is the original spec. You can also see it from the link above.
+
 Level 0 focuses on the basic user interface and interaction building of the site.
 There is no need to implement any integration with the backend for this level.
 
@@ -65,8 +42,7 @@ This for now updates the internal state object described above.
 **Feed Interface**
 
 The application should present a "feed" of user content on the home page derived from the sample feed.json provided.
-The posts should be displayed in reverse chronological order (most recent posts first). You can hardcode how this works for
-this milestone.
+The posts should be displayed in reverse chronological order (most recent posts first). You can hardcode how this works for this milestone.
 
 Although this is not a graphic design exercise you should produce pages with a common and somewhat distinctive look-and-feel. You may find CSS useful for this.
 
