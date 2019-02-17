@@ -1,6 +1,9 @@
 
 ## Introduction
-The final product is temporarily hosted in http://207.148.84.121:8080
+The frontend is built by me using Vanilla JS. The backend in this repo is provided by the academic staff.
+Now I am building the same backend using nodejs in another [repository](https://github.com/zyucong/instacram_backend). The main reason is that I want to try to implement API endpoint with express and deploy it somewhere.
+
+The final product is temporarily hosted in [here](http://shuangji666.info)
 
 Some of the skills/concepts I have implemented (and build upon):
 
@@ -9,7 +12,7 @@ Some of the skills/concepts I have implemented (and build upon):
 * Fetching data from an API
 * Infinite scroll
 * CSS Animations
-* Push Notifications (Polling)
+* Push Notifications (Polling) (considering removing it. Looks like it takes up too much resources when deployed)
 * Routing (URL fragment based routing)
 
 ## A Working Product
