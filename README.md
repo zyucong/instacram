@@ -1,7 +1,7 @@
 
 ## Introduction
 The frontend is built by me using Vanilla JS. The backend in this repo is provided by the academic staff using flask and sqlite.
-To be honest, they don't have time to optimise the logic so it is a bit mess but workable. Now this webapp is hosted in [here](http://ig.t66y.cf). Some interesting username/password pair you can try: Emma/taste, Mia/pan
+To be honest, they don't have time to optimise the logic so it is a bit mess but workable. Now this webapp is hosted in [here](https://ig.t66y.cf). Some interesting username/password pair you can try: Emma/taste, Mia/pan
 
 Now I am building the same backend using nodejs in another [repository](https://github.com/zyucong/instacram_backend). The main reason is that I want to try to implement API endpoint with express and deploy it somewhere.
 
