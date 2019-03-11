@@ -46,7 +46,7 @@ function loggedOut() {
     // reset the infinite scroll counter
     scrollFrom = 0;
     // clear push notification
-    clearInterval(interval_id);
+    // clearInterval(interval_id);
     // clear all posts under feed
     while (main.firstChild) {
         main.removeChild(main.firstChild);
@@ -259,31 +259,7 @@ function loggedIn() {
         document.addEventListener('scroll', infinite_scroll);
     });
     // call this function every 5s to check new post from following user
-    interval_id = setInterval(notification, 5000);
-}
-
-// used to request the feed to check new post
-async function notification () {
-    let token = checkStore('user-token');
-    if (!token) {
-        return;
-    }
-    fetch(API_URL + '/user/feed', {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Authorization': 'Token ' + token
-        }
-    }).then(res => res.json()).then(data => {
-        // display notification everytime the latest post id from api is different to the latest one on web page
-        if (data.posts.length !== 0 && data.posts[0].id > newestPost){
-            newestPost = data.posts[0].id;
-            let notification = document.getElementById('notification');
-            notification.style.display = 'block';
-            notification.textContent = `${data.posts[0].meta.author} just uploaded a new post. Check it out!`;
-        }
-    })
+    // interval_id = setInterval(notification, 5000);
 }
 
 // infinite scroll feature would also call this function to get feed
@@ -563,7 +539,7 @@ function user_profile() {
     let url = window.location.href;
     if (url.includes('#')) {
         // clear push notification
-        clearInterval(interval_id);
+        // clearInterval(interval_id);
         // clear previous content in this page
         const feed = document.getElementById('large-feed');
         while (feed.firstChild) {
@@ -850,12 +826,6 @@ async function myFollowing(id, target) {
     let followingList = data.following;
     return [followingList.includes(id), target];
 }
-
-// initialize the notification alert
-document.getElementById('notification').style.display = 'none';
-document.getElementById('notification').addEventListener('click', () => {
-    window.location.reload();
-});
 
 // some modals and event listeners that would be loaded no matter in what states
 // modal used to upload new content, targeted by post button
