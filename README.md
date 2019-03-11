@@ -135,8 +135,9 @@ Let a user update a post they made or delete it via (`DELETE /post`) or (`PUT /p
 **Slick UI**
 The user interface looks good, is performant, makes logical sense, and is usable.
 
-**Push Notifications**
-Users can receive push notifications when a user they follow posts an image. Notification can be accessed at (`GET /latest`)
+~~**Push Notifications**
+Users can receive push notifications when a user they follow posts an image. Notification can be accessed at (`GET /latest`)~~
+**Remove in this branch for deploy due to performance reason**
 
 **Offline Access**
 Users can access the "Instacram" at all times by using Web Workers to cache the page (and previous content) locally.
